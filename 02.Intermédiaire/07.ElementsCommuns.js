@@ -17,7 +17,7 @@ const elementsCommuns = (tableau1, tableau2) => {
         for (let j = 0; j < tableau2.length; j++) {
             if (tableau1[i] === tableau2[j]) {
                 tableauCommun.push(tableau1[i]);
-                break; // On peut sortir de la boucle intérieure dès qu'un élément commun est trouvé
+                break; // On sort de la boucle interne
             }
         }
     }
