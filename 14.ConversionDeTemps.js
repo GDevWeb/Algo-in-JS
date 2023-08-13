@@ -10,15 +10,15 @@ const convertirTemps = (minutes) => {
     if (minutes <= 0) {
         return "Le nombre de minutes doit être supérieur à zéro.";
     } else {
-        const heures = Math.floor(minutes / 60);
-        const minutesRestants = minutes % 60;
+        const heures = Math.floor(minutes / 60); // Math.floor() arrondit à l'entier inférieur
+        const minutesRestants = minutes % 60; // % est l'opérateur modulo
         
-        if (heures === 0) {
-            return `${minutesRestants} minutes`;
-        } else if (minutesRestants === 0) {
-            return `${heures} heures`;
+        if (heures === 0) { // Si le nombre d'heures est nul, on ne l'affiche pas
+            return `${minutesRestants} minutes`; // On affiche seulement les minutes
+        } else if (minutesRestants === 0) { // Si le nombre de minutes restantes est nul, on ne l'affiche pas
+            return `${heures} heures`; // On affiche seulement les heures
         } else {
-            return `${heures} heures et ${minutesRestants} minutes`;
+            return `${heures} heures et ${minutesRestants} minutes`; // On affiche les heures et les minutes
         }
     }
 }
