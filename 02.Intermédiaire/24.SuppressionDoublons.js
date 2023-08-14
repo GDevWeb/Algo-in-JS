@@ -22,14 +22,16 @@ if(str === ""){
     //2. parcourir le tableau de caractères
     for(let i = 0; i < splitStr.length;i++){
         //3. vérifier si le caractère est déjà présent dans le tableau
+
+        // 4.si déjà présent on le retire :
         if(uniqueChars.indexOf(splitStr[i]) === -1){
 
-            //4. si le caractère n'est pas déjà présent, ajouter le caractère au tableau
+            //5. si le caractère n'est pas déjà présent, ajouter le caractère au tableau
            uniqueChars.push(splitStr[i]);
         }
         
     }
-    //5. join le tableau en une chaîne de caractères : ["b","a","n","a"] => "ban"
+    //6. join le tableau en une chaîne de caractères : ["b","a","n"] => "ban"
     return uniqueChars.join("");
 }
 
