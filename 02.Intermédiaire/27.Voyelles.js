@@ -1,4 +1,4 @@
-//Exercice 25 : Comptage des voyelles
+//Exercice 27 : Comptage des voyelles
 
 /**
  * 
