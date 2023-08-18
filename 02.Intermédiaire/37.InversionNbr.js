@@ -11,12 +11,12 @@ Assurez-vous de gérer les cas où le nombre est négatif.
 
 const inverserNombre = (n) => {
 
-    if(n < 0) {
+    if(n < 0) { // si n est négatif
 
-        let array = n.toString().split("");
-        let arrayReverse = array.reverse();
-        let number = parseInt(arrayReverse.join(""));
-        return number * -1; // ou return -number;
+        let array = n.toString().split(""); // convertit le nombre en chaîne de caractères puis en tableau de caractères
+        let arrayReverse = array.reverse(); // inverse le tableau
+        let number = parseInt(arrayReverse.join("")); // convertit le tableau en chaîne de caractères puis en nombre entier
+        return number * -1;  // retourne le nombre multiplié par -1
 
     }else {
             

@@ -11,18 +11,18 @@ Assurez-vous de gérer le cas où n est nul.
 
 const factorielle = (n) => {
 
-    if(n == 0){
+    if(n == 0){ // si n est égal à 0
             
-            return 1;
+            return 1; // retourne 1
 
     }else {
 
 
-        let total = 1; // ou let total = n;
+        let total = 1;  // initialise la variable total à 1
 
-        for(let i = 1; i <= n; i++){
+        for(let i = 1; i <= n; i++){ // boucle sur les nombres de 1 à n
                 
-                total *= i; // ou total *= i;
+                total *= i; // multiplie total par i
     
             }
         

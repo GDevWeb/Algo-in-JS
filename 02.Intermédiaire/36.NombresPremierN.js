@@ -12,40 +12,40 @@ Assurez-vous de gérer les cas où n est inférieur à 2.
 
 const nombresPremiers = (n) => {
 
-    if (n < 2) {
+    if (n < 2) { // si n est inférieur à 2
 
-        return "Le nombre doit être supérieur ou égal à 2";
+        return "Le nombre doit être supérieur ou égal à 2"; // affiche un message d'erreur
 
 
     } else {
 
 
-        let array = [];
+        let array = []; // initialise un tableau vide
 
-        for (let i = 2; i <= n; i++) {
+        for (let i = 2; i <= n; i++) { // boucle sur les nombres de 2 à n
 
-            let isPremier = true;
+            let isPremier = true; // initialise la variable isPremier à true
 
-            for (let j = 2; j < i; j++) {
+            for (let j = 2; j < i; j++) { // boucle sur les nombres de 2 à i
 
-                if (i % j == 0) {
+                if (i % j == 0) { // si i est divisible par j
 
-                    isPremier = false;
+                    isPremier = false; // isPremier passe à false
 
-                    break;
+                    break; // on sort de la boucle
 
                 } else {
 
-                    isPremier = true;
+                    isPremier = true; // isPremier reste à true
                 }
 
 
 
             }
 
-            if (isPremier) {
+            if (isPremier) { // si isPremier est true
 
-                array.push(i);
+                array.push(i); // on ajoute i au tableau
 
             }
 

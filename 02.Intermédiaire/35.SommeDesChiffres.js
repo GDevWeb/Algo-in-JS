@@ -17,12 +17,12 @@ const sommeChiffres = (n) => {
 
 }else {
     
-        let array = n.toString().split("");
-        let total = 0;
+        let array = n.toString().split(""); // convertit le nombre en chaîne de caractères puis en tableau de caractères
+        let total = 0; // initialise la variable total à 0
     
-        for(let i = 0; i < array.length; i++){
+        for(let i = 0; i < array.length; i++){ // boucle sur le tableau
     
-            total += parseInt(array[i]);
+            total += parseInt(array[i]); // additionne chaque élément du tableau en le convertissant en nombre entier
     
         }
     

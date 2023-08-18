@@ -11,18 +11,18 @@ Assurez-vous de gérer le cas où n est inférieur ou égal à 0.
 
 const genererSequenceCroissante = (n) => {
 
-    if(n <= 0) {
+    if(n <= 0) { // si n est inférieur ou égal à 0
 
-        return "Le nombre doit être supérieur à 0";
+        return "Le nombre doit être supérieur à 0"; // affiche un message d'erreur
 
 
-    }else{
+    }else{ // sinon
 
-        let array = [];
+        let array = []; // initialise un tableau vide
 
-        for(let i = 1; i <= n; i++){
+        for(let i = 1; i <= n; i++){ // boucle sur les nombres de 1 à n
 
-            array.push(i);
+            array.push(i); // on ajoute i au tableau
 
         }
 
